@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Internal CSS</title>
+    <!--Using <style>, internal CSS is added-->
+    <style>
+      #styledById {
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
+      }
+      .nav-link {
+        padding: 5px;
+        margin: 4px;
+        border: 2px;
+        border: solid;
+        border: black;
+        background-color: #eeffee;
+        color: darkgreen;
+      }
+      .nav-link li {
+        display: inline-block;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+      body {
+        background-color: rgb(255, 254, 245);
+      }
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #86195c;
+      }
+      p {
+        font-size: 24px;
+        font-family: "Times New Roman", Times, sans-serif;
+        line-height: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="background-color: ghostwhite; height: 140px; width: auto">
+        <header>
+          <h1>Typography Principles</h1>
+        </header>
+        <p id="styledById">
+          This web page will show the effect of giving an element an ID and
+          <span style="color: blue; font-weight: bold">styling</span> that ID.
+          (Hold Ctrl + Shift + I to view code)
+        </p>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <a href="index.html" class="nav-link"
+          ><li>Inline CSS (index.html)</li></a
+        >
+        <a href="internal-css.html" class="nav-link"><li>Internal CSS</li></a>
+        <a href="external-css.html" class="nav-link"><li>External CSS</li></a>
+        <a href="testing-cascading.html" class="nav-link"
+          ><li>Cascade Test</li></a
+        >
+        <a href="classes-and-ids.html" class="nav-link"
+          ><li>ID and Class Styling</li></a
+        >
+        <a href="div-and-span.html" class="nav-link"
+          ><li>Div and Span Styling</li></a
+        >
+        <a href="typography.html" class="nav-link"
+          ><li>Typography Principles</li></a
+        >
+      </ul>
+    </nav>
+  </body>
+</html>
