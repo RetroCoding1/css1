@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Cascade Test</title>
+    <!--Using <link>, external CSS from css-pages-style.css is added-->
+    <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
+    <style>
+      body {
+        background-color: rgb(233, 146, 146);
+      }
+      h1 {
+        text-align: right;
+        font-size: 40px;
+        color: #757184;
+      }
+      p {
+        color: #417943;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body style="color: navy">
+    <header>
+      <h1>CSS Cascading Test</h1>
+    </header>
+    <p>
+      This page shows the effects of how CSS cascades (hierarchical structure).
+      External is checked first, internal overrides external, and inline
+      overrides internal. (Hold Ctrl + Shift + I to view code)
+    </p>
+    <nav>
+      <ul>
+        <a href="index.html"><li>Inline CSS (index.html)</li></a>
+        <a href="internal-css.html"><li>Internal CSS</li></a>
+        <a href="external-css.html"><li>External CSS</li></a>
+        <a href="testing-cascading.html"><li>Cascade Test</li></a>
+        <a href="classes-and-ids.html"><li>ID and Class Styling</li></a>
+        <a href="div-and-span.html"><li>Div and Span Styling</li></a>
+      </ul>
+    </nav>
+  </body>
+</html>
