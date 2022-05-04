@@ -6,29 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backgrounds and Text</title>
     <style>
+      p {
+        color: #291541;
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 48px;
+        text-align: center;
+      }
       body {
-        background-color: #291541;
+        background-color: ghostwhite;
+      }
+      div p {
+        font-weight: bold;
+      }
+      section {
+        background-color: #5ac88b;
+      }
+      /* ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+      nav {
+        padding: 5px;
+        margin: 4px;
+        border: 2px;
+        border: solid;
+        border: black;
+        background-color: #eeffee;
+        color: darkgreen;
+      } */
+      #styledById {
+        font-family: Georgia, Cambria, serif;
+        font-weight: bold;
+      }
+      .nav-link {
+        padding: 5px;
+        margin: 4px;
+        border: 2px;
+        border: solid;
+        border: black;
+        background-color: #eeffee;
+        color: darkgreen;
+      }
+      .nav-link li {
+        display: inline-block;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #eeffee;
+        background-color: darkgreen;
+      }
+      nav a:visited {
+        color: white;
+        background-color: purple;
       }
     </style>
   </head>
   <body>
     <nav>
+      <ul>
+        <a href="index.html" class="nav-link"
+          ><li>Inline CSS (index.html)</li></a
+        >
+        <a href="internal-css.html" class="nav-link"><li>Internal CSS</li></a>
+        <a href="external-css.html" class="nav-link"><li>External CSS</li></a>
+        <a href="testing-cascading.html" class="nav-link"
+          ><li>Cascade Test</li></a
+        >
+        <a href="classes-and-ids.html" class="nav-link"
+          ><li>ID and Class Styling</li></a
+        >
+        <a href="div-and-span.html" class="nav-link"
+          ><li>Div and Span Styling</li></a
+        >
+        <a href="typography.html" class="nav-link"
+          ><li>Typography Principles</li></a
+        >
+        <a href="backgrounds-and-text.html" class="nav-link"
+          ><li>Backgrounds and Text</li></a
+        >
+      </ul>
       <main>
         <h1>Backgrounds and Text Demonstration</h1>
         <section>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
-          <p>Zombie Escape is my favorite gamemode in TF2</p>
+          <div>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+            <p>Zombie Escape is my favorite gamemode in TF2</p>
+          </div>
         </section>
       </main>
     </nav>
