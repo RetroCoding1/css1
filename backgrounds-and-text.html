@@ -26,7 +26,28 @@
         margin-bottom: 5%;
         margin-left: 10%;
         margin-right: 10%;
+        /* animation-timing-function: ease-in;
+        animation-delay: 0.5s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-name: fade-in;
+        animation-duration: 1s; */
+
+        animation: fade-in 1s ease-in 0.5s forwards;
+        /* This one line gets all of the above commented stuff done. */
+
+        position: relative;
+        top: 200px;
+        opacity: 0;
       }
+
+      @keyframes fade-in {
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
       div p {
         font-weight: bold;
       }
