@@ -11,10 +11,28 @@
         margin-left: 10%;
         margin-right: 10%;
       }
+
       h1 {
         text-align: center;
         font-size: 40px;
+        visibility: hidden;
+        /* Visibility allows you to hide the element, but the space used up by the element stays there. */
+        animation-name: swivel;
+        -o-animation: swivel 1s ease-in-out 0.3s forwards;
+        -moz-animation: swivel 1s ease-in-out 0.3s forwards;
+        -webkit-animation: swivel 1s ease-in-out 0.3s forwards;
+        animation: swivel 1s ease-in-out 0.3s forwards;
       }
+      @keyframes swivel {
+        from {
+          transform: rotateY(90deg);
+        }
+        to {
+          transform: rotateY(0deg);
+          visibility: visible;
+        }
+      }
+
       p {
         color: #86195c;
         font-size: 24px;
@@ -27,7 +45,8 @@
     </header>
     <p>
       This page shows the effects of adding internal CSS to a web page. (Hold
-      Ctrl + Shift + I to view code)
+      Ctrl + Shift + I to view code) <br />
+      (Header was recently updated to be animated for an assignment!)
     </p>
     <nav>
       <ul>
