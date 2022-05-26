@@ -13,7 +13,8 @@
         line-height: 140%;
         scroll-behavior: smooth;
       }
-      /* Styles all elements in the body to have a font color of whitesmoke. It also sets the background to use an image of circles overlapping each other. */
+      /* Styles all elements in the body to have a font color of whitesmoke. It also sets the background to use an image of circles 
+      overlapping each other. */
       body {
         color: whitesmoke;
         /* Let us define an image using a URL to display an image as the background */
@@ -22,7 +23,8 @@
       }
       nav {
         width: 100%;
-        /* Defines a linear gradient background for the nav bar. The linear gradient goes from right to left where the first color #a8c0ff is on the right and the second color #3f2b96 is on the left. */
+        /* Defines a linear gradient background for the nav bar. The linear gradient goes from right to left where the first color 
+        #a8c0ff is on the right and the second color #3f2b96 is on the left. */
         background: -o-linear-gradient(to left, #a8c0ff, #3f2b96);
         background: -moz-linear-gradient(to left, #a8c0ff, #3f2b96);
         background: -webkit-linear-gradient(to left, #a8c0ff, #3f2b96);
@@ -30,6 +32,10 @@
         /* Changes the background size of the gradient to be 100% of the width of the nav and the auto height for the nav. */
         background-size: 100% auto;
         padding: 1% 2%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 3;
       }
       ul {
         /* This gets rid of the bullet points beside each list item. */
@@ -47,12 +53,18 @@
         /* Sets the background colour of the nav to #00549E and the font color to be aliceblue. */
         background-color: #00549e;
         color: aliceblue;
-        /* Defines a shadow for our text that has three separate shadows. The first is going to be offset 0.2px in the right direction, 0.2 px offset in the down direction, have 0px of blur, and a black color to the shadow. The second is going to be offset 0.5px in the right direction, 0.5 px offset in the down direction, have 0px of blur, and a black color to the shadow. The third is going to be offset 0.8px in the right direction, 0.8 px offset in the down direction, have 0px of blur, and a black color to the shadow. */
+        /* Defines a shadow for our text that has three separate shadows. 
+        The first is going to be offset 0.2px in the right direction, 0.2 px offset in the down direction, have 0px of blur, 
+        and a black color to the shadow. The second is going to be offset 0.5px in the right direction, 0.5 px offset in the down 
+        direction, have 0px of blur, and a black color to the shadow. The third is going to be offset 0.8px in the right direction, 
+        0.8 px offset in the down direction, have 0px of blur, and a black color to the shadow. */
         text-shadow: 0.2px 0.2px 0.6px black, 0.5px 0.5px 0.3px black,
           0.8px 0.8px 0px black;
         /* Sets the text to have a bolder font weight. */
         font-weight: bolder;
-        /* The transition property allows for a smooth change between the initial style of the nav link to the hover/focus styling of increasing the scale of the link using the transform property. The transition lasts 0.5 seconds and eases in and eases out of the transition. */
+        /* The transition property allows for a smooth change between the initial style of the nav link to the hover/focus styling 
+        of increasing the scale of the link using the transform property. The transition lasts 0.5 seconds and eases in and eases out 
+        of the transition. */
         -o-transition: transform 0.5s ease-in-out;
         -moz-transition: transform 0.5s ease-in-out;
         -webkit-transition: transform 0.5s ease-in-out;
@@ -123,11 +135,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* By defining the width and height equally and using a border-radius that is half of the width and height, we create a perfectly circular back-to-top button.      */
+        /* By defining the width and height equally and using a border-radius that is half of the width and height, 
+        we create a perfectly circular back-to-top button.      */
         width: 50px;
         height: 50px;
         border-radius: 25px;
-        /* Defines a radial gradient for this circular back to top button. where the first colour #3f2b96 is in the center of the circular area and goes to #a8c0ff on the outer edges. */
+        /* Defines a radial gradient for this circular back to top button. where the first colour #3f2b96 is in the 
+        center of the circular area and goes to #a8c0ff on the outer edges. */
         background: -o-radial-gradient(#3f2b96, #a8c0ff);
         background: -moz-radial-gradient(#3f2b96, #a8c0ff);
         background: -webkit-radial-gradient(#3f2b96, #a8c0ff);
@@ -136,6 +150,34 @@
         text-shadow: 0px 1px 1px black, 0px 1.5px 1px black;
         text-decoration: none;
         text-align: center;
+      }
+      #float img {
+        float: left;
+      }
+      #relative {
+        position: relative;
+        top: 200px;
+        right: 50px;
+      }
+      #positioned {
+        position: relative;
+        z-index: 1;
+      }
+      #absolute {
+        /* Pulls the element out of the normal flow of the website. */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      #sticky {
+        /* Sticky acts like a relatively positioned element until you reach the offset defined by top, left, bottom, or right. 
+        Once you reach the offset, it becomes a fixed element and will scroll along with the page. */
+        position: sticky;
+        top: 208px;
+        z-index: 3;
+        background-color: #121212;
+        font-weight: bold;
+        padding: 20px;
       }
     </style>
   </head>
@@ -183,7 +225,21 @@
         <p>
           This is an image to represent just how school-appropriate this web
           page is. We made this web page to demonstrate the CSS properties of
-          float, clear, position, display, and visibility.
+          float, clear, position, display, and visibility. This is an image to
+          represent just how school-appropriate this web page is. We made this
+          web page to demonstrate the CSS properties of float, clear, position,
+          display, and visibility. This is an image to represent just how
+          school-appropriate this web page is. We made this web page to
+          demonstrate the CSS properties of float, clear, position, display, and
+          visibility.This is an image to represent just how school-appropriate
+          this web page is. We made this web page to demonstrate the CSS
+          properties of float, clear, position, display, and visibility. This is
+          an image to represent just how school-appropriate this web page is. We
+          made this web page to demonstrate the CSS properties of float, clear,
+          position, display, and visibility.This is an image to represent just
+          how school-appropriate this web page is. We made this web page to
+          demonstrate the CSS properties of float, clear, position, display, and
+          visibility.
         </p>
       </section>
       <section id="relative">
